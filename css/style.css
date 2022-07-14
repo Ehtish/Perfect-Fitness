@@ -16,6 +16,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 
 .button_1 {
   height: 38px;
@@ -182,19 +188,15 @@ footer p span {
   color: #8f9ca6;
 }
 
-footer .fa-brands {
+footer a span {
+  font-size: 22px;
   color: #8f9ca6;
   margin: 18px;
 }
 
-
-a:hover {
-  transition: 0.2s;
-  font-size: 17px;
+footer a :hover {
+  color: #19dafa;
 }
-/* footer .social-icons span:hover{
-  transition: all .2s ease-out;
-} */
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -233,12 +235,11 @@ a:hover {
     width: 100%;
     margin-bottom: 5px;
   }
-  footer{
+  footer {
     display: block;
     width: 100%;
   }
   footer p {
     text-align: center;
-  } 
-
+  }
 }
